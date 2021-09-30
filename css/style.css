@@ -27,6 +27,7 @@ caption{
 body{
   color: #000000;
   font-size: 16px;
+  margin: 1.2em;
   background-size: cover ;
   background-position: center;
   font-family: "Andika", "sans-serif";
@@ -75,6 +76,7 @@ td{
   padding-left: 10px;
   padding-top:10px;
   padding-right:10px;
+  border-top:2px #000000 solid;
 }
 
 
@@ -84,15 +86,17 @@ td{
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #000000;
   background-color:#7e0825;
   min-width:125px;
   text-transform:uppercase;
+  text-align:center;
+  vertical-align:middle;
 
 }
 
 .rowhead{
-  border-right: 2px solid #000000
+  border-right: 2px solid #000000;
+  border-top: 2px solid #000000;
 
 }
 
@@ -107,13 +111,18 @@ table{
     border-radius:50px;
     -moz-border-radius:50px;
 }
+
+tr:nth-child(even){
+  background-color: #D1D1D1;
+}
+tr:nth-child(odd){
+  background-color: transparent;
+}
+
 tbody tr:hover{
-  background-color:rgb(126, 8, 37);
-  opacity: 0.75;
+  background-color:rgb(126, 8, 37, 0.25);
   
 }
-tr:nth-child(even){background: #D1D1D1;}
-tr:nth-child(odd){background-color: transparent;}
 
 /* I gave you the selector, but not the property-value pair. 
 You can use Inspect Element or your editor to find selectors. */
